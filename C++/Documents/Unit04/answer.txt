@@ -1,0 +1,15 @@
+ 
+Result:
+1. D
+2. E.
+3. B
+4. C cout is an object of ostream class which is a compiler defined class. When we do "cout << obj" where obj is an object of our class, the compiler first looks for an operator function in ostream, then it looks for a global function. One way to overload insertion operator is to modify ostream class which may not be a good idea. So we make a global method.
+5. B
+6. B  Note that the class B has as conversion operator overloaded, so an object of B can be converted to that of A. Also, class A has a constructor which can be called with single integer argument, so an int can be converted to A. 
+7. C
+8. B Consider the following statement
+    Test *ptr = new Test;  
+There are actually two things that happen in the above statement--memory allocation and object construction; the new keyword is responsible for both. One step in the process is to call operator new in order to allocate memory; the other step is to actually invoke the constructor. Operator new only allows us to change the memory allocation method, but does not do anything with the constructor calling method. Keyword new is responsible for calling the constructor, not operator new.
+9. A This a simple example of function call operator overloading. The function call operator, when overloaded, does not modify how functions are called. Rather, it modifies how the operator is to be interpreted when applied to objects of a given type. If you overload a function call operator for a class its declaration will have the following form:
+    return_type operator()(parameter_list) 
+ 10. C.
