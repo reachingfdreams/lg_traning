@@ -22,3 +22,12 @@
     - Reviewed theory and pratised from the documents of Unit01
     - Did Quiz of Unit02
     - Did Assugment Of Unit02
+
+1.3 Inheritance in C++, Polymophism in C++
+
+    - Start date: 16/01/2020 (Afternoon)
+    - End date: 16/01/2020
+
+    - Reviewed theory and pratised from the documents of Unit01
+    - Did Quiz of Unit03
+    - Did Assugment Of Unit03

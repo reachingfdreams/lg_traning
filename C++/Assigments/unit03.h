@@ -1,0 +1,77 @@
+#ifndef UNIT03_H_
+#define UNIT03_H_
+
+#include <iostream>
+#include <string>
+
+namespace unit03 {
+
+/////////////////////////////////////////////////////////////////////////
+////////////////////////////////// Shape ////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+class Shape {
+ public:
+     virtual std::string GetName() const = 0;
+     virtual float GetArea() const = 0;
+     virtual float GetSum() const = 0;
+     virtual bool IsValid() const = 0;
+
+     virtual void DisplayInfo() const;
+};
+
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////// Triangle ////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+class Triangle : public Shape {
+ public:
+     Triangle();
+     Triangle(float line1, float line2, float line3);
+     ~Triangle();
+
+     static const char* kName;
+
+     // Shape::
+     std::string GetName() const override;
+     float GetArea() const override;
+     float GetSum() const override;
+     bool IsValid() const  override;
+
+ private:
+     float line1_;
+     float line2_;
+     float line3_;
+};
+
+/////////////////////////////////////////////////////////////////////////
+///////////////////////// SquareTriangle ////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+class SquareTriangle : public Triangle {
+ public:
+    SquareTriangle(float sq_line1, float sq_line2);
+    ~SquareTriangle();
+
+    static const char* kName;
+
+    // Shape::
+    std::string GetName() const override;
+    float GetArea() const override;
+    float GetSum() const override;
+    bool IsValid() const override;
+
+ private:
+     float sq_line1_;
+     float sq_line2_;
+};
+
+/////////////////////////////////////////////////////////////////////////
+//////////////////////////////// Helper /////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+void RunAssignmentOfUnit03();
+
+}	// namespace unit03
+
+#endif  // UNIT03_H_H
