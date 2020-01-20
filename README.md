@@ -1,4 +1,4 @@
-# LG_Self_Training
+# LG Self Traning
 
 1. C++
 
@@ -37,3 +37,13 @@
     - Did Assugment Of Unit03
 
     https://github.com/reachingfdreams/lg_traning/commit/341689493af2752be4c02e285e8bfd8c7c24671f
+
+1.4 Operator overloading, Template C++
+
+    - Start date: 17/01/2020
+    - End date: 20/01/2020
+    - 2 Days
+
+    - Reviewed theory and pratised from the documents of Unit04, Unit05
+    - Did Quiz of Unit04, Unit05
+    - Did Assugment Of Unit04
